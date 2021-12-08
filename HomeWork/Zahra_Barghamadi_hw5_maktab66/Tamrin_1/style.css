@@ -1,0 +1,220 @@
+@import url(./fontiran.css); 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  font-family: IRANSans !important;
+}
+header {
+  border-top: 15px solid #45A132;
+  box-shadow: 0px 1px 5px rgb(235, 228, 228);
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width:80%;
+  margin: 0 auto;
+  font-size: 1vw;
+}
+button {
+  padding: 0.6% 2.5%;
+  border: 0;
+  border-radius: 20px;
+  background-color: #45A132;
+  color: beige;
+  font-size: 1vw;
+  cursor: pointer;
+  font-family:IRANSans;
+}
+.right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logo img {
+  width:120px;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 3rem;
+  margin-left: auto;
+}
+nav li {
+  list-style: none;
+  margin: auto 0 auto 1vw;
+  padding: 0.5vw 1vw;
+  transition: all 200ms ease;
+}
+nav li:hover {
+  border-radius: 20px;
+  background-color: rgb(95, 199, 95);
+  color: aliceblue;
+  cursor: pointer;
+}
+main {
+  margin-bottom:4%;
+}
+h1 {
+  align-items: center;
+  text-align: center;
+  font-size: 1.5vw;
+  line-height: 4rem;
+  color: rgb(95, 91, 91);
+}
+.main-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 55%;
+  margin: 1% auto;
+}
+.main-div div {
+  text-align: center;
+}
+.same {
+  background-position: center;
+  background-size: 3.5vw 3.5vw;
+  background-color: rgb(252, 180, 47);
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 0;
+  width: 8vw;
+  height: 8vw;
+}
+.first {
+  background-image: url(./icons/coins.png);
+}
+.second {
+  background-image: url(./icons/multipleUsers.png);
+}
+.third {
+  background-image: url(./icons/leaf.png);
+}
+.main-div div p {
+  font-size: 1vw;
+  padding-top: 1vw;
+}
+section {
+  background-color: rgb(239, 243, 243);
+  color: green;
+}
+h2 {
+  text-align: center;
+  font-size: 1.5vw;
+  padding: 3% 0;
+  color: rgb(56, 168, 56);
+}
+.section-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0vw 13vw;
+  padding-bottom: 2vw;
+}
+.sections {
+  height: 10vw;
+  padding: 1vw;
+  width: 13vw;
+  border-radius: 1vw;
+  background-color: white;
+  box-shadow: 0px 1px 5px rgb(235, 228, 228);
+  transition: all 200ms ease;
+}
+.sections:hover {
+  border-bottom: 0.8rem solid rgb(5, 145, 5);
+}
+.pictures {
+  background-position: center;
+  background-size: 3vw 3vw;
+  background-repeat: no-repeat;
+  border: 0;
+  height: 5vw;
+}
+.supermarket {
+  background-image: url(./icons/kharobar.png);
+}
+.hotel {
+  background-image: url(./icons/hotel.png);
+}
+.coffee {
+  background-image: url(./icons/restaurant.png);
+}
+.baking {
+  background-image: url(./icons/bread.png);
+}
+.sections p {
+  text-align: center;
+  font-size: 0.9vw;
+}
+@media only screen and (max-width:500px) {
+  nav{
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  nav ul{
+    margin: 10px auto;
+  }
+  nav li{
+    font-size: 2.5vw;
+  }
+  button{
+    margin: 10px auto;
+    font-size: 2.5vw;
+  }
+  .logo img{
+    width: 120px;
+  }
+  h1,h2{
+    font-size: 3vw;
+  }
+  .same{
+    background-size: 5.5vw 5.5vw;
+    width: 11vw;
+    height: 11vw;
+  }
+  .main-div div p,.sections p{
+    font-size: 2vw;
+  }
+  main{
+    margin-bottom: 10%;
+  }
+  .section-list{
+    flex-direction: column;
+    align-items: center;
+  }
+  .sections{
+    margin: 10px 0;
+    height: 17vw;
+    padding: 4vw;
+    width: 23vw;
+  }
+  .pictures{
+    background-size: 5vw 5vw;
+    height: 5vw;
+  }
+}
+@media only screen and (max-width:500px) {
+  .main-div{
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-div div{
+    margin: 5px;
+  }
+  .same{
+    background-size: 10vw 10vw;
+    width: 18vw;
+    height: 18vw;
+  }
+  .main-div div p,.sections p{
+    font-size: 2.5vw;
+  }
+}
