@@ -1,14 +1,13 @@
 const c = document.getElementById("canvas");
 const ctx = c.getContext("2d");
-
-function drawCircle(center, r) {
+function drawCircle(center) {
   ctx.beginPath();
-  ctx.arc(center.x, center.y, r, 0, 2 * Math.PI);
+  ctx.arc(center.x, center.y, center.r, 0, 2 * Math.PI);
   ctx.stroke();
 }
-function drawLine(start, end) {
+function drawLine(xStart, yStart, xEnd, yEnd) {
   ctx.beginPath();
-  ctx.moveTo(start.x, start.y);
-  ctx.lineTo(end.x, end.y);
+  ctx.moveTo(xStart, yStart);
+  ctx.lineTo(xEnd, yEnd);
   ctx.stroke();
 }
